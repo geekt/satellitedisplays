@@ -1,0 +1,9 @@
+//
+// Prefix header for all source files of the 'ned-display mac' target in the 'ned mac' project
+// 
+// how do I make this prefix both targets?
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

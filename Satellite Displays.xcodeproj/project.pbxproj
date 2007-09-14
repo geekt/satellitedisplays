@@ -1,0 +1,669 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		BAEF5C590B24DD87005905A5 /* Client + Display */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = BAEF5C690B24DDA4005905A5 /* Build configuration list for PBXAggregateTarget "Client + Display" */;
+			buildPhases = (
+			);
+			dependencies = (
+				BAEF5C5B0B24DD8E005905A5 /* PBXTargetDependency */,
+				BAEF5C5D0B24DD92005905A5 /* PBXTargetDependency */,
+			);
+			name = "Client + Display";
+			productName = "Client + Display";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		8D11072A0486CEB800E47090 /* SDEServerMainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* SDEServerMainMenu.nib */; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		BA02F8230AC9F12300DCCEB5 /* SDECommon.m in Sources */ = {isa = PBXBuildFile; fileRef = BA02F8220AC9F12300DCCEB5 /* SDECommon.m */; };
+		BA02F8240AC9F12300DCCEB5 /* SDECommon.m in Sources */ = {isa = PBXBuildFile; fileRef = BA02F8220AC9F12300DCCEB5 /* SDECommon.m */; };
+		BA1DC6BB0B093D320031DA47 /* SDECustomWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1DC6BA0B093D320031DA47 /* SDECustomWindow.m */; };
+		BA6C784A0AD58B0100ABD2BC /* SDEConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6C78490AD58B0100ABD2BC /* SDEConnection.m */; };
+		BA6C784B0AD58B0100ABD2BC /* SDEConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6C78490AD58B0100ABD2BC /* SDEConnection.m */; };
+		BA74CDB20B0A51F300190A1D /* SDECustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA74CDB10B0A51F300190A1D /* SDECustomView.m */; };
+		BA74CDF50B0A88B900190A1D /* SDECursorController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA74CDF40B0A88B900190A1D /* SDECursorController.m */; };
+		BA74CDF80B0A891400190A1D /* SDEServerCursorWindow.nib in Resources */ = {isa = PBXBuildFile; fileRef = BA74CDF60B0A891400190A1D /* SDEServerCursorWindow.nib */; };
+		BA7FF9160A391E680060D873 /* SDEClientMainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = BA7FF9140A391E680060D873 /* SDEClientMainMenu.nib */; };
+		BA7FF9DE0A391F4F0060D873 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		BA7FF9F90A3920440060D873 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BA7FF9F70A3920440060D873 /* InfoPlist.strings */; };
+		BA7FF9FA0A3920440060D873 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BA7FF9F70A3920440060D873 /* InfoPlist.strings */; };
+		BA80CCFA0A6E755A0055A04D /* DEGTXTRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = BA80CCF80A6E755A0055A04D /* DEGTXTRecord.m */; };
+		BA81A2C60C4435720042C0FB /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA81A2C50C4435720042C0FB /* Carbon.framework */; };
+		BA81A2C70C4435720042C0FB /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA81A2C50C4435720042C0FB /* Carbon.framework */; };
+		BA88DAF60B012FDC00E81CEC /* SDEFramegrabber.m in Sources */ = {isa = PBXBuildFile; fileRef = BA88DAF50B012FDC00E81CEC /* SDEFramegrabber.m */; };
+		BAA1F08B0ACA011F00A56D7C /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAA1F08A0ACA011F00A56D7C /* IOKit.framework */; };
+		BAA1F08C0ACA011F00A56D7C /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAA1F08A0ACA011F00A56D7C /* IOKit.framework */; };
+		BAA1F1420ACA022B00A56D7C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAA1F1410ACA022B00A56D7C /* SystemConfiguration.framework */; };
+		BAA1F1430ACA022B00A56D7C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAA1F1410ACA022B00A56D7C /* SystemConfiguration.framework */; };
+		BAA1F4220ACA08D500A56D7C /* jens.icns in Resources */ = {isa = PBXBuildFile; fileRef = BAEB9F970A79369B0030E70A /* jens.icns */; };
+		BAA1F5140ACA1AD800A56D7C /* NSScreen_UserDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC8A7070AB46E8400B5458B /* NSScreen_UserDescription.m */; };
+		BAA1FA6F0ACC60F500A56D7C /* NSSocketPort_Port.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA1FA6E0ACC60F500A56D7C /* NSSocketPort_Port.m */; };
+		BAA1FA700ACC60F500A56D7C /* NSSocketPort_Port.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA1FA6E0ACC60F500A56D7C /* NSSocketPort_Port.m */; };
+		BAC8A7080AB46E8400B5458B /* NSScreen_UserDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC8A7070AB46E8400B5458B /* NSScreen_UserDescription.m */; };
+		BACFEA6C0A681BA8005C1A51 /* SDEService.m in Sources */ = {isa = PBXBuildFile; fileRef = BACFEA6A0A681BA8005C1A51 /* SDEService.m */; };
+		BAD2AB0C0C552F81002EA02B /* SDEClientController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD2AB0A0C552F81002EA02B /* SDEClientController.m */; };
+		BAD2AB150C5530EF002EA02B /* SDEServerRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD2AB130C5530EF002EA02B /* SDEServerRenderer.m */; };
+		BAD2AB160C5530EF002EA02B /* SDEServerController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD2AB140C5530EF002EA02B /* SDEServerController.m */; };
+		BAD2AB180C553102002EA02B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD2AB170C553102002EA02B /* main.m */; };
+		BAD2AB190C553102002EA02B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD2AB170C553102002EA02B /* main.m */; };
+		BAEB9F960A79367A0030E70A /* dieter.icns in Resources */ = {isa = PBXBuildFile; fileRef = BAEB9F940A79367A0030E70A /* dieter.icns */; };
+		BAF56E750B0D1293004B8E58 /* NSScreen_WIDs.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF56E740B0D1293004B8E58 /* NSScreen_WIDs.m */; };
+		BAF56F1B0B0D46ED004B8E58 /* NSWindow_FrameWithWID.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF56F1A0B0D46ED004B8E58 /* NSWindow_FrameWithWID.m */; };
+		BAF56F220B0D48D5004B8E58 /* NSWindow_ImageWithWID.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF56F210B0D48D5004B8E58 /* NSWindow_ImageWithWID.m */; };
+		BAF5710D0B0E924C004B8E58 /* SDEWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF5710C0B0E924C004B8E58 /* SDEWindowController.m */; };
+		BAF571100B0E9308004B8E58 /* SDEServerRenderWindow.nib in Resources */ = {isa = PBXBuildFile; fileRef = BAF5710E0B0E9308004B8E58 /* SDEServerRenderWindow.nib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BAEF5C5A0B24DD8E005905A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D1107260486CEB800E47090;
+			remoteInfo = "NED Display";
+		};
+		BAEF5C5C0B24DD92005905A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA7FF8A10A391B910060D873;
+			remoteInfo = "NED Client";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		29B97319FDCFA39411CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/SDEServerMainMenu.nib; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		32CA4F630368D1EE00C91783 /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* SDEServerInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = SDEServerInfo.plist; sourceTree = "<group>"; };
+		BA02F8210AC9F12300DCCEB5 /* SDECommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDECommon.h; sourceTree = "<group>"; };
+		BA02F8220AC9F12300DCCEB5 /* SDECommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDECommon.m; sourceTree = "<group>"; };
+		BA1DC6B90B093D320031DA47 /* SDECustomWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDECustomWindow.h; sourceTree = "<group>"; };
+		BA1DC6BA0B093D320031DA47 /* SDECustomWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDECustomWindow.m; sourceTree = "<group>"; };
+		BA6C78480AD58B0100ABD2BC /* SDEConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDEConnection.h; sourceTree = "<group>"; };
+		BA6C78490AD58B0100ABD2BC /* SDEConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDEConnection.m; sourceTree = "<group>"; };
+		BA730B5F0A79433100EA554F /* SDE Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SDE Client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA730B610A79433100EA554F /* SDE Server.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SDE Server.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA74CDB00B0A51F300190A1D /* SDECustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDECustomView.h; sourceTree = "<group>"; };
+		BA74CDB10B0A51F300190A1D /* SDECustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDECustomView.m; sourceTree = "<group>"; };
+		BA74CDF30B0A88B900190A1D /* SDECursorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDECursorController.h; sourceTree = "<group>"; };
+		BA74CDF40B0A88B900190A1D /* SDECursorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDECursorController.m; sourceTree = "<group>"; };
+		BA74CDF70B0A891400190A1D /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/SDEServerCursorWindow.nib; sourceTree = "<group>"; };
+		BA7FF8A40A391B910060D873 /* SDEClientInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SDEClientInfo.plist; sourceTree = "<group>"; };
+		BA7FF9150A391E680060D873 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/SDEClientMainMenu.nib; sourceTree = "<group>"; };
+		BA7FF9F80A3920440060D873 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BA80CCF70A6E755A0055A04D /* DEGTXTRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEGTXTRecord.h; sourceTree = "<group>"; };
+		BA80CCF80A6E755A0055A04D /* DEGTXTRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEGTXTRecord.m; sourceTree = "<group>"; };
+		BA81A2C50C4435720042C0FB /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		BA88DAF40B012FDC00E81CEC /* SDEFramegrabber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDEFramegrabber.h; sourceTree = "<group>"; };
+		BA88DAF50B012FDC00E81CEC /* SDEFramegrabber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDEFramegrabber.m; sourceTree = "<group>"; };
+		BAA1F08A0ACA011F00A56D7C /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = /System/Library/Frameworks/IOKit.framework; sourceTree = "<absolute>"; };
+		BAA1F1410ACA022B00A56D7C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = /System/Library/Frameworks/SystemConfiguration.framework; sourceTree = "<absolute>"; };
+		BAA1FA6D0ACC60F500A56D7C /* NSSocketPort_Port.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSSocketPort_Port.h; sourceTree = "<group>"; };
+		BAA1FA6E0ACC60F500A56D7C /* NSSocketPort_Port.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSSocketPort_Port.m; sourceTree = "<group>"; };
+		BAC8A7060AB46E8400B5458B /* NSScreen_UserDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSScreen_UserDescription.h; sourceTree = "<group>"; };
+		BAC8A7070AB46E8400B5458B /* NSScreen_UserDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSScreen_UserDescription.m; sourceTree = "<group>"; };
+		BAC8A85A0AB5B54500B5458B /* CGSPrivate.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CGSPrivate.h; sourceTree = "<group>"; };
+		BACFEA690A681BA8005C1A51 /* SDEService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDEService.h; sourceTree = "<group>"; };
+		BACFEA6A0A681BA8005C1A51 /* SDEService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDEService.m; sourceTree = "<group>"; };
+		BAD2AB090C552F81002EA02B /* SDEClientController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDEClientController.h; sourceTree = "<group>"; };
+		BAD2AB0A0C552F81002EA02B /* SDEClientController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDEClientController.m; sourceTree = "<group>"; };
+		BAD2AB110C5530EF002EA02B /* SDEServerRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDEServerRenderer.h; sourceTree = "<group>"; };
+		BAD2AB120C5530EF002EA02B /* SDEServerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDEServerController.h; sourceTree = "<group>"; };
+		BAD2AB130C5530EF002EA02B /* SDEServerRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDEServerRenderer.m; sourceTree = "<group>"; };
+		BAD2AB140C5530EF002EA02B /* SDEServerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDEServerController.m; sourceTree = "<group>"; };
+		BAD2AB170C553102002EA02B /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BAEB9F950A79367A0030E70A /* English */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = English; path = English.lproj/dieter.icns; sourceTree = "<group>"; };
+		BAEB9F980A79369B0030E70A /* English */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = English; path = English.lproj/jens.icns; sourceTree = "<group>"; };
+		BAF56E730B0D1293004B8E58 /* NSScreen_WIDs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSScreen_WIDs.h; sourceTree = "<group>"; };
+		BAF56E740B0D1293004B8E58 /* NSScreen_WIDs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSScreen_WIDs.m; sourceTree = "<group>"; };
+		BAF56F190B0D46ED004B8E58 /* NSWindow_FrameWithWID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSWindow_FrameWithWID.h; sourceTree = "<group>"; };
+		BAF56F1A0B0D46ED004B8E58 /* NSWindow_FrameWithWID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSWindow_FrameWithWID.m; sourceTree = "<group>"; };
+		BAF56F200B0D48D5004B8E58 /* NSWindow_ImageWithWID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSWindow_ImageWithWID.h; sourceTree = "<group>"; };
+		BAF56F210B0D48D5004B8E58 /* NSWindow_ImageWithWID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSWindow_ImageWithWID.m; sourceTree = "<group>"; };
+		BAF5710B0B0E924C004B8E58 /* SDEWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDEWindowController.h; sourceTree = "<group>"; };
+		BAF5710C0B0E924C004B8E58 /* SDEWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDEWindowController.m; sourceTree = "<group>"; };
+		BAF5710F0B0E9308004B8E58 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/SDEServerRenderWindow.nib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				BAA1F08C0ACA011F00A56D7C /* IOKit.framework in Frameworks */,
+				BAA1F1430ACA022B00A56D7C /* SystemConfiguration.framework in Frameworks */,
+				BA81A2C60C4435720042C0FB /* Carbon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA7FF8A00A391B910060D873 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA7FF9DE0A391F4F0060D873 /* Cocoa.framework in Frameworks */,
+				BAA1F08B0ACA011F00A56D7C /* IOKit.framework in Frameworks */,
+				BAA1F1420ACA022B00A56D7C /* SystemConfiguration.framework in Frameworks */,
+				BA81A2C70C4435720042C0FB /* Carbon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Server Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BAD2AB110C5530EF002EA02B /* SDEServerRenderer.h */,
+				BAD2AB130C5530EF002EA02B /* SDEServerRenderer.m */,
+				BAD2AB120C5530EF002EA02B /* SDEServerController.h */,
+				BAD2AB140C5530EF002EA02B /* SDEServerController.m */,
+				BAF570650B0E899B004B8E58 /* UI */,
+				BA74CDF30B0A88B900190A1D /* SDECursorController.h */,
+				BA74CDF40B0A88B900190A1D /* SDECursorController.m */,
+				BAF5710B0B0E924C004B8E58 /* SDEWindowController.h */,
+				BAF5710C0B0E924C004B8E58 /* SDEWindowController.m */,
+			);
+			name = "Server Classes";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BA730B5F0A79433100EA554F /* SDE Client.app */,
+				BA730B610A79433100EA554F /* SDE Server.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* ned-display mac */ = {
+			isa = PBXGroup;
+			children = (
+				BA7FFA510A3923770060D873 /* Shared */,
+				BA7FF8F30A391D6C0060D873 /* Client Classes */,
+				080E96DDFE201D6D7F000001 /* Server Classes */,
+				BA7FF8F90A391D870060D873 /* Client Resources */,
+				29B97317FDCFA39411CA2CEA /* Server Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = "ned-display mac";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Server Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BAEB9F970A79369B0030E70A /* jens.icns */,
+				29B97318FDCFA39411CA2CEA /* SDEServerMainMenu.nib */,
+				BA74CDF60B0A891400190A1D /* SDEServerCursorWindow.nib */,
+				BAF5710E0B0E9308004B8E58 /* SDEServerRenderWindow.nib */,
+				8D1107310486CEB800E47090 /* SDEServerInfo.plist */,
+			);
+			name = "Server Resources";
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA81A2C50C4435720042C0FB /* Carbon.framework */,
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+				BAA1F1410ACA022B00A56D7C /* SystemConfiguration.framework */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+				BAA1F08A0ACA011F00A56D7C /* IOKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BA7FF8F30A391D6C0060D873 /* Client Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BAA3BCDA0A94191D009C197F /* ZeroConf */,
+				BAD2AB090C552F81002EA02B /* SDEClientController.h */,
+				BAD2AB0A0C552F81002EA02B /* SDEClientController.m */,
+				BACFEA690A681BA8005C1A51 /* SDEService.h */,
+				BACFEA6A0A681BA8005C1A51 /* SDEService.m */,
+				BA88DAF40B012FDC00E81CEC /* SDEFramegrabber.h */,
+				BA88DAF50B012FDC00E81CEC /* SDEFramegrabber.m */,
+			);
+			name = "Client Classes";
+			sourceTree = "<group>";
+		};
+		BA7FF8F90A391D870060D873 /* Client Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BAEB9F940A79367A0030E70A /* dieter.icns */,
+				BA7FF9140A391E680060D873 /* SDEClientMainMenu.nib */,
+				BA7FF8A40A391B910060D873 /* SDEClientInfo.plist */,
+			);
+			name = "Client Resources";
+			sourceTree = "<group>";
+		};
+		BA7FFA510A3923770060D873 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* Prefix.pch */,
+				BAD2AB170C553102002EA02B /* main.m */,
+				BA02F8210AC9F12300DCCEB5 /* SDECommon.h */,
+				BA02F8220AC9F12300DCCEB5 /* SDECommon.m */,
+				BA6C78480AD58B0100ABD2BC /* SDEConnection.h */,
+				BA6C78490AD58B0100ABD2BC /* SDEConnection.m */,
+				BAA3BCD90A94190D009C197F /* UI */,
+				BAA1F5150ACA1B0100A56D7C /* Categories and Wrappers */,
+				BA7FF9F70A3920440060D873 /* InfoPlist.strings */,
+			);
+			name = Shared;
+			sourceTree = "<group>";
+		};
+		BAA1F5150ACA1B0100A56D7C /* Categories and Wrappers */ = {
+			isa = PBXGroup;
+			children = (
+				BAC8A7060AB46E8400B5458B /* NSScreen_UserDescription.h */,
+				BAC8A7070AB46E8400B5458B /* NSScreen_UserDescription.m */,
+				BAA1FA6D0ACC60F500A56D7C /* NSSocketPort_Port.h */,
+				BAA1FA6E0ACC60F500A56D7C /* NSSocketPort_Port.m */,
+				BAF56E730B0D1293004B8E58 /* NSScreen_WIDs.h */,
+				BAF56E740B0D1293004B8E58 /* NSScreen_WIDs.m */,
+				BAF56F190B0D46ED004B8E58 /* NSWindow_FrameWithWID.h */,
+				BAF56F1A0B0D46ED004B8E58 /* NSWindow_FrameWithWID.m */,
+				BAF56F200B0D48D5004B8E58 /* NSWindow_ImageWithWID.h */,
+				BAF56F210B0D48D5004B8E58 /* NSWindow_ImageWithWID.m */,
+			);
+			name = "Categories and Wrappers";
+			sourceTree = "<group>";
+		};
+		BAA3BCD90A94190D009C197F /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				BAC8A85A0AB5B54500B5458B /* CGSPrivate.h */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		BAA3BCDA0A94191D009C197F /* ZeroConf */ = {
+			isa = PBXGroup;
+			children = (
+				BA80CCF70A6E755A0055A04D /* DEGTXTRecord.h */,
+				BA80CCF80A6E755A0055A04D /* DEGTXTRecord.m */,
+			);
+			name = ZeroConf;
+			sourceTree = "<group>";
+		};
+		BAF570650B0E899B004B8E58 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				BA1DC6B90B093D320031DA47 /* SDECustomWindow.h */,
+				BA1DC6BA0B093D320031DA47 /* SDECustomWindow.m */,
+				BA74CDB00B0A51F300190A1D /* SDECustomView.h */,
+				BA74CDB10B0A51F300190A1D /* SDECustomView.m */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* SDE Server */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "SDE Server" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SDE Server";
+			productInstallPath = "$(HOME)/Applications";
+			productName = "ned-display mac";
+			productReference = BA730B610A79433100EA554F /* SDE Server.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BA7FF8A10A391B910060D873 /* SDE Client */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA7FF8A50A391B920060D873 /* Build configuration list for PBXNativeTarget "SDE Client" */;
+			buildPhases = (
+				BA7FF89E0A391B910060D873 /* Resources */,
+				BA7FF89F0A391B910060D873 /* Sources */,
+				BA7FF8A00A391B910060D873 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SDE Client";
+			productName = "ned-client mac";
+			productReference = BA730B5F0A79433100EA554F /* SDE Client.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Satellite Displays" */;
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* ned-display mac */;
+			projectDirPath = "";
+			targets = (
+				8D1107260486CEB800E47090 /* SDE Server */,
+				BA7FF8A10A391B910060D873 /* SDE Client */,
+				BAEF5C590B24DD87005905A5 /* Client + Display */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAA1F4220ACA08D500A56D7C /* jens.icns in Resources */,
+				8D11072A0486CEB800E47090 /* SDEServerMainMenu.nib in Resources */,
+				BA7FF9FA0A3920440060D873 /* InfoPlist.strings in Resources */,
+				BA74CDF80B0A891400190A1D /* SDEServerCursorWindow.nib in Resources */,
+				BAF571100B0E9308004B8E58 /* SDEServerRenderWindow.nib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA7FF89E0A391B910060D873 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA7FF9160A391E680060D873 /* SDEClientMainMenu.nib in Resources */,
+				BA7FF9F90A3920440060D873 /* InfoPlist.strings in Resources */,
+				BAEB9F960A79367A0030E70A /* dieter.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA02F8240AC9F12300DCCEB5 /* SDECommon.m in Sources */,
+				BAA1F5140ACA1AD800A56D7C /* NSScreen_UserDescription.m in Sources */,
+				BAA1FA6F0ACC60F500A56D7C /* NSSocketPort_Port.m in Sources */,
+				BA6C784A0AD58B0100ABD2BC /* SDEConnection.m in Sources */,
+				BA1DC6BB0B093D320031DA47 /* SDECustomWindow.m in Sources */,
+				BA74CDB20B0A51F300190A1D /* SDECustomView.m in Sources */,
+				BA74CDF50B0A88B900190A1D /* SDECursorController.m in Sources */,
+				BAF5710D0B0E924C004B8E58 /* SDEWindowController.m in Sources */,
+				BAD2AB150C5530EF002EA02B /* SDEServerRenderer.m in Sources */,
+				BAD2AB160C5530EF002EA02B /* SDEServerController.m in Sources */,
+				BAD2AB180C553102002EA02B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA7FF89F0A391B910060D873 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BACFEA6C0A681BA8005C1A51 /* SDEService.m in Sources */,
+				BA80CCFA0A6E755A0055A04D /* DEGTXTRecord.m in Sources */,
+				BAC8A7080AB46E8400B5458B /* NSScreen_UserDescription.m in Sources */,
+				BA02F8230AC9F12300DCCEB5 /* SDECommon.m in Sources */,
+				BAA1FA700ACC60F500A56D7C /* NSSocketPort_Port.m in Sources */,
+				BA6C784B0AD58B0100ABD2BC /* SDEConnection.m in Sources */,
+				BA88DAF60B012FDC00E81CEC /* SDEFramegrabber.m in Sources */,
+				BAF56E750B0D1293004B8E58 /* NSScreen_WIDs.m in Sources */,
+				BAF56F1B0B0D46ED004B8E58 /* NSWindow_FrameWithWID.m in Sources */,
+				BAF56F220B0D48D5004B8E58 /* NSWindow_ImageWithWID.m in Sources */,
+				BAD2AB0C0C552F81002EA02B /* SDEClientController.m in Sources */,
+				BAD2AB190C553102002EA02B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BAEF5C5B0B24DD8E005905A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D1107260486CEB800E47090 /* SDE Server */;
+			targetProxy = BAEF5C5A0B24DD8E005905A5 /* PBXContainerItemProxy */;
+		};
+		BAEF5C5D0B24DD92005905A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA7FF8A10A391B910060D873 /* SDE Client */;
+			targetProxy = BAEF5C5C0B24DD92005905A5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		29B97318FDCFA39411CA2CEA /* SDEServerMainMenu.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29B97319FDCFA39411CA2CEA /* English */,
+			);
+			name = SDEServerMainMenu.nib;
+			sourceTree = "<group>";
+		};
+		BA74CDF60B0A891400190A1D /* SDEServerCursorWindow.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA74CDF70B0A891400190A1D /* English */,
+			);
+			name = SDEServerCursorWindow.nib;
+			sourceTree = "<group>";
+		};
+		BA7FF9140A391E680060D873 /* SDEClientMainMenu.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA7FF9150A391E680060D873 /* English */,
+			);
+			name = SDEClientMainMenu.nib;
+			sourceTree = "<group>";
+		};
+		BA7FF9F70A3920440060D873 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA7FF9F80A3920440060D873 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BAEB9F940A79367A0030E70A /* dieter.icns */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BAEB9F950A79367A0030E70A /* English */,
+			);
+			name = dieter.icns;
+			sourceTree = "<group>";
+		};
+		BAEB9F970A79369B0030E70A /* jens.icns */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BAEB9F980A79369B0030E70A /* English */,
+			);
+			name = jens.icns;
+			sourceTree = "<group>";
+		};
+		BAF5710E0B0E9308004B8E58 /* SDEServerRenderWindow.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BAF5710F0B0E9308004B8E58 /* English */,
+			);
+			name = SDEServerRenderWindow.nib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BA7FF8A60A391B920060D873 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = SDEClientInfo.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = "SDE Client";
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Debug;
+		};
+		BA7FF8A70A391B920060D873 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = SDEClientInfo.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = "SDE Client";
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		BAEF5C6A0B24DDA4005905A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = "Client + Display";
+			};
+			name = Debug;
+		};
+		BAEF5C6B0B24DDA4005905A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				PRODUCT_NAME = "Client + Display";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = SDEServerInfo.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = "SDE Server";
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				INFOPLIST_FILE = SDEServerInfo.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = "SDE Server";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = RELEASE;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BA7FF8A50A391B920060D873 /* Build configuration list for PBXNativeTarget "SDE Client" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA7FF8A60A391B920060D873 /* Debug */,
+				BA7FF8A70A391B920060D873 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAEF5C690B24DDA4005905A5 /* Build configuration list for PBXAggregateTarget "Client + Display" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAEF5C6A0B24DDA4005905A5 /* Debug */,
+				BAEF5C6B0B24DDA4005905A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "SDE Server" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Satellite Displays" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
